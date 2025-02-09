@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 
     <!-- BEGIN CHANGE ME -->
-    <title>TITLE</title>
-    <meta name="description" content="PRESENTATION DESCRIPTION">
-    <meta name="author" content="AUTHOR NAME">
+    <title>General Assembly Meeting: TeSoPs 2025</title>
+    <meta name="description" content="Presenting the contributions of the Netherlands eScience Center">
+    <meta name="author" content="Ole Mussmann">
     <!-- END CHANGE ME -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -30,26 +30,81 @@
           data-background-video-muted="true"
           data-markdown>
             <textarea data-template>
-              # My Title
-              ## Subtitle
+              # TeSoPs &<br>eScience Center
+              ## General Assembly Meeting 2025
 
-              [Author Name](mailto:a.name@esciencecenter.nl)
+              [Ole Mussmann](mailto:o.mussmann@esciencecenter.nl)
             </textarea>
           </section>
 
           <section> <!-- start of nested slides/column -->
-            <section data-state="standard">
-              <h2>html slides</h2>
-              <p>content</p>
-              <p>with html</p>
+            <section data-state="standard" data-markdown data-background-image="./files/factory-8263188_1280.jpg">
+            <!-- https://pixabay.com/photos/factory-smoke-pollution-8263188/ -->
+              <textarea data-template>
+              ## CO<sub>2</sub> Prediction
+
+              [Bart Schilperoort](mailto:b.schilperoort@esciencecenter.nl), Thijs Vroegh
+              </textarea>
             </section>
 
-            <section data-state="standard" data-markdown>
+            <section data-state="standard" data-markdown data-background-image="./files/factory-8263188_1280.jpg">
               <textarea data-template>
-                # Header
+              ## Premise
 
-                - list item
-                - another one
+              - [Nationaal Energie Dashboard](https://ned.nl/) CO<sub>2</sub> emission prediction: 12h
+              - Solar & wind energy prediction: 7d
+
+              <span style="text-align: left;">Powerchainger wants to know:<br><em>Can we predict the CO<sub>2</sub> emission for a whole week?</em></span>
+              </textarea>
+            </section>
+
+            <section data-state="clear_background yellow_flag" data-background-iframe="./emissionfactor_export.html" data-background-color="white">
+            </section>
+            <section data-state="standard" data-markdown data-background-image="./files/factory-8263188_1280.jpg">
+              <textarea data-template>
+              ## Performance
+
+              - Uncertainty is _model_ uncertainty, not accounting for predictions in weather.
+              - 20% of predicted data points outside the 90% confidence range, really good!
+              - Model is open source (Apache 2.0), on
+                - GitHub: [github.com/ESI-FAR/emissionfactor-nl](https://github.com/ESI-FAR/emissionfactor-nl), or
+                - Docker container: [ghcr.io/esi-far/emissionfactor-forecast](https://ghcr.io/esi-far/emissionfactor-forecast)
+              </textarea>
+            </section>
+          </section> <!-- end of nested slides/column -->
+
+          <section> <!-- start of nested slides/column -->
+            <section data-state="black_overlay yellow_flag logo" data-markdown data-background-image="./files/lightbulb-3104355_1280.jpg">
+            <!-- https://pixabay.com/photos/lightbulb-idea-creativity-base-3104355/ -->
+              <textarea data-template>
+              ## Statistics on Energy Consumers
+
+              [Erik Tjong Kim Sang](mailto:e.tjongkimsang@esciencecenter.nl)
+
+              <br>
+
+              - Checking statistics of a draft paper of the Groningen group
+              - Energy consumers' opinion for energy bill support measures<br>
+                taken by the Dutch government
+              </textarea>
+            </section>
+          </section> <!-- end of nested slides/column -->
+
+          <section> <!-- start of nested slides/column -->
+            <section data-state="blue_overlay 9 yellow_flag logo" data-markdown data-background-image="./files/database-schema-1895779_1280.png">
+            <!-- https://pixabay.com/vectors/database-schema-data-tables-schema-1895779/ -->
+              <textarea data-template>
+              ## Data Sharing Platform: [CKAN](https://ckan.org)
+
+              [Ole Mussmann](mailto:o.mussmann@esciencecenter.nl), [Erik Tjong Kim Sang](mailto:e.tjongkimsang@esciencecenter.nl)
+
+              - "The world’s leading open source data management system"
+              - Data handling via website or API (happy data engineers!)
+              - Extensive metadata: description, license, tags, etc.
+              - Multiple files per dataset
+              - Simple dataset preview
+              - Data versioning
+              - Federation
               </textarea>
             </section>
           </section> <!-- end of nested slides/column -->
